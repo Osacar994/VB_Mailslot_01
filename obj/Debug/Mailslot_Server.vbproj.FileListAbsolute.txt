@@ -1,0 +1,9 @@
+C:\Users\danie_000\Documents\Visual Studio 2012\Projects\VB_Mailslot\VB_Mailslot\bin\Debug\Mailslot_Server.dll
+C:\Users\danie_000\Documents\Visual Studio 2012\Projects\VB_Mailslot\VB_Mailslot\bin\Debug\Mailslot_Server.pdb
+C:\Users\danie_000\Documents\Visual Studio 2012\Projects\VB_Mailslot\VB_Mailslot\bin\Debug\Mailslot_Server.xml
+C:\Users\danie_000\Documents\Visual Studio 2012\Projects\VB_Mailslot\VB_Mailslot\bin\Debug\Mailslot_Server.tlb
+C:\Users\danie_000\Documents\Visual Studio 2012\Projects\VB_Mailslot\VB_Mailslot\obj\Debug\Mailslot_Server.Resources.resources
+C:\Users\danie_000\Documents\Visual Studio 2012\Projects\VB_Mailslot\VB_Mailslot\obj\Debug\Mailslot_Server.vbproj.GenerateResource.Cache
+C:\Users\danie_000\Documents\Visual Studio 2012\Projects\VB_Mailslot\VB_Mailslot\obj\Debug\Mailslot_Server.dll
+C:\Users\danie_000\Documents\Visual Studio 2012\Projects\VB_Mailslot\VB_Mailslot\obj\Debug\Mailslot_Server.xml
+C:\Users\danie_000\Documents\Visual Studio 2012\Projects\VB_Mailslot\VB_Mailslot\obj\Debug\Mailslot_Server.pdb

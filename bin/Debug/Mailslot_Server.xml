@@ -1,0 +1,143 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Mailslot_Server
+</name>
+</assembly>
+<members>
+<member name="M:Mailslot_Server.MailslotServer.CreateMailslotSecurity">
+	<summary>
+ The CreateMailslotSecurity function creates and initializes a new 
+ SECURITY_ATTRIBUTES object to allow Authenticated Users read and write 
+ access to a mailslot, and to allow the Administrators group full access
+ to the mailslot.
+ </summary>
+	<returns>
+ A SECURITY_ATTRIBUTES object that allows Authenticated Users read and 
+ write access to a mailslot, and allows the Administrators group full 
+ access to the mailslot.
+ </returns>
+</member><member name="T:Mailslot_Server.SafeMailslotHandle">
+	<summary>
+ Represents a wrapper class for a mailslot handle. 
+ </summary>
+</member><member name="T:Mailslot_Server.SECURITY_ATTRIBUTES">
+	<summary>
+ The SECURITY_ATTRIBUTES structure contains the security descriptor for an
+ object and specifies whether the handle retrieved by specifying this 
+ structure is inheritable. This structure provides security settings for
+ objects created by various functions, such as CreateFile, CreateNamedPipe, 
+ CreateProcess, RegCreateKeyEx, or RegSaveKeyEx.
+ </summary>
+</member><member name="T:Mailslot_Server.SafeLocalMemHandle">
+	<summary>
+ Represents a wrapper class for a local memory pointer.
+ </summary>
+</member><member name="M:Mailslot_Server.NativeMethod.CreateMailslot(System.String,System.UInt32,System.Int32,Mailslot_Server.SECURITY_ATTRIBUTES)">
+	<summary>
+ Creates an instance of a mailslot and returns a handle for subsequent 
+ operations.
+ </summary>
+	<param name="mailslotName">Mailslot name</param>
+	<param name="nMaxMessageSize">
+ The maximum size of a single message
+ </param>
+	<param name="lReadTimeout">
+ The time a read operation can wait for a message.
+ </param>
+	<param name="securityAttributes">Security attributes</param>
+	<returns>
+ If the function succeeds, the return value is a handle to the server 
+ end of a mailslot instance.
+ </returns>
+</member><member name="M:Mailslot_Server.NativeMethod.GetMailslotInfo(Mailslot_Server.SafeMailslotHandle,System.IntPtr,System.Int32@,System.Int32@,System.IntPtr)">
+	<summary>
+ Retrieves information about the specified mailslot.
+ </summary>
+	<param name="hMailslot">A handle to a mailslot</param>
+	<param name="lpMaxMessageSize">
+ The maximum message size, in bytes, allowed for this mailslot.
+ </param>
+	<param name="lpNextSize">
+ The size of the next message in bytes.
+ </param>
+	<param name="lpMessageCount">
+ The total number of messages waiting to be read.
+ </param>
+	<param name="lpReadTimeout">
+ The amount of time, in milliseconds, a read operation can wait for a 
+ message to be written to the mailslot before a time-out occurs. 
+ </param>
+	<returns></returns>
+</member><member name="M:Mailslot_Server.NativeMethod.ReadFile(Mailslot_Server.SafeMailslotHandle,System.Byte[],System.Int32,System.Int32@,System.IntPtr)">
+	<summary>
+ Reads data from the specified file or input/output (I/O) device.
+ </summary>
+	<param name="handle">
+ A handle to the device (for example, a file, file stream, physical
+ disk, volume, console buffer, tape drive, socket, communications
+ resource, mailslot, or pipe).
+ </param>
+	<param name="bytes">
+ A buffer that receives the data read from a file or device.
+ </param>
+	<param name="numBytesToRead">
+ The maximum number of bytes to be read.
+ </param>
+	<param name="numBytesRead">
+ The number of bytes read when using a synchronous IO.
+ </param>
+	<param name="overlapped">
+ A pointer to an OVERLAPPED structure if the file was opened with
+ FILE_FLAG_OVERLAPPED.
+ </param>
+	<returns>
+ If the function succeeds, the return value is true. If the function
+ fails, or is completing asynchronously, the return value is false.
+ </returns>
+</member><member name="M:Mailslot_Server.NativeMethod.ConvertStringSecurityDescriptorToSecurityDescriptor(System.String,System.Int32,Mailslot_Server.SafeLocalMemHandle@,System.IntPtr)">
+	<summary>
+ The ConvertStringSecurityDescriptorToSecurityDescriptor function
+ converts a string-format security descriptor into a valid,
+ functional security descriptor.
+ </summary>
+	<param name="sddlSecurityDescriptor">
+ A string containing the string-format security descriptor (SDDL)
+ to convert.
+ </param>
+	<param name="sddlRevision">
+ The revision level of the sddlSecurityDescriptor string.
+ Currently this value must be 1.
+ </param>
+	<param name="pSecurityDescriptor">
+ A pointer to a variable that receives a pointer to the converted
+ security descriptor.
+ </param>
+	<param name="securityDescriptorSize">
+ A pointer to a variable that receives the size, in bytes, of the
+ converted security descriptor. This parameter can be IntPtr.Zero.
+ </param>
+	<returns>
+ If the function succeeds, the return value is true.
+ </returns>
+</member><member name="T:Mailslot_Server.NativeMethod">
+	<summary>
+ The class exposes Windows APIs to be used in this code sample.
+ </summary>
+</member><member name="P:Mailslot_Server.My.Resources.Resources.ResourceManager">
+	<summary>
+  Devuelve la instancia de ResourceManager almacenada en caché utilizada por esta clase.
+</summary>
+</member><member name="P:Mailslot_Server.My.Resources.Resources.Culture">
+	<summary>
+  Reemplaza la propiedad CurrentUICulture del subproceso actual para todas las
+  búsquedas de recursos mediante esta clase de recurso fuertemente tipado.
+</summary>
+</member><member name="T:Mailslot_Server.My.Resources.Resources">
+	<summary>
+  Clase de recurso fuertemente tipado, para buscar cadenas traducidas, etc.
+</summary>
+</member>
+</members>
+</doc>
